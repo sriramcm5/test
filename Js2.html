@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<h1>Enter the data</h1>
+<input type="text" id="value1"></input>
+<button onclick="handleSave()">Store data</button>
+<script>
+
+
+    function handleSave(){
+        let a = document.getElementById("value1").value
+        localStorage.setItem("Data1", a)
+        alert('Data saved to Local')
+    }
+
+    function handleGet(){
+    let b=localStorage.getItem("Data1")
+    }
+    if(b) {
+        document.getElementById("result").textContent=b
+    }
+    else{
+        document.getElementById("result").textContent="No data"
+    }
+
+</script>
+</body>
+</html>

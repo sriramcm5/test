@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Change Text and Color with jquery</h1>
+    <p id="mytext">This is some text.</p>
+    <button id="changeBtn">change Text</button>
+    
+    <script>
+        function handleText(){
+            let a=document.getElementById("header")
+            a.textContent="Welcome"
+        }
+
+        //jquery
+
+        $(document).ready(function() {
+            $('#changeBtn').click(function() {
+                $('#myText').text('Text Changed!');
+
+            });
+        });
+
+
+    </script>
+    <h1 id="header">helloo world</h1>
+    <button onclick="handleText()">Change text</button>
+
+</body>
+</html>

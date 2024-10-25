@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <script>
+        function myFunction(){
+            let out1=document.getElementById("value1").value
+            let out2=document.getElementById("value2").value
+
+            let r1=parseFloat(out1)
+            let r2=parseFloat(out2)
+
+            let sum=r1+r2
+
+            document.getElementById("result").textContent="The answer is "+ sum
+
+        }
+    </script>
+
+    <input type="text" id="value1"></input>
+    <input type="text" id="value2"></input>
+
+    <button onclick="myFunction()">Add</button>
+    <p id="result"></p>
+
+</body>
+</html>

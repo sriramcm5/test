@@ -1,0 +1,114 @@
+/* .ji{
+    color: blueviolet;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.ea{
+    color:aqua;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.re{
+    width: 200px;
+    height: 200px;
+} */
+ /* .main{
+    background-image: url(./image/download1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ } */
+  @keyframes fadein{
+    0%{
+        opacity: 0;
+      
+    }
+  } 100%{
+    opacity: 1;
+
+  }
+  .content{
+    animation: fadein 5s ease-in-out;
+    text-align: center;
+  }
+  @keyframes slide{
+
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 300px;
+    }
+  }
+
+  .box{
+    width: 170px;
+    height: 100px;
+    background-color: brown;
+    position:relative;
+    animation: slide 1s infinite alternate;
+    
+    
+  }
+  @keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        left: 0px;
+
+    } 
+    100%{
+        transform:rotate(360deg);
+        left: 300px; ;
+    }
+    
+  }
+  .square{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    animation: rotate 5s linear infinite alternate;
+    position: relative;
+                     
+  }
+  .circle{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position:relative;
+    animation: rotate 1s infinite alternate;
+    border-radius: 100px;
+
+  }
+  .hello{
+    font-size: 80px;
+    color: crimson;
+  
+  }
+  @media only screen and (max-width : 768px){
+    .circle{
+      background-color: goldenrod;
+    }
+    .hello{
+      font-size: 30px;
+      color: blueviolet;
+    }
+  }
+  @keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        left: 0px;
+
+    } 
+    100%{
+        transform:rotate(360deg);
+        left: 300px; ;
+    }
+     
+
+    }
+
+    }
+      
+    } 
+
+ 

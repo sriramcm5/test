@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case Example</title>
+</head>
+<body>
+
+<h1>Switch Case Example in JavaScript</h1>
+
+<label for="day">Choose a day:</label>
+<select id="day">
+    <option value="1">Monday</option>
+    <option value="2">Tuesday</option>
+    <option value="3">Wednesday</option>
+    <option value="4">Thursday</option>
+    <option value="5">Friday</option>
+    <option value="6">Saturday</option>
+    <option value="7">Sunday</option>
+</select>
+
+<button onclick="showMessage()">Show Message</button>
+
+<p id="message"></p>
+
+<script>
+    function showMessage() {
+        const day = document.getElementById('day').value;
+        let message;
+
+        switch(day) {
+            case '1':
+                message = "It's Monday, start of a new week!";
+                break;
+            case '2':
+                message = "It's Tuesday, keep going!";
+                break;
+            case '3':
+                message = "It's Wednesday, halfway through!";
+                break;
+            case '4':
+                message = "It's Thursday, almost there!";
+                break;
+            case '5':
+                message = "It's Friday, weekend is near!";
+                break;
+            case '6':
+                message = "It's Saturday, enjoy your weekend!";
+                break;
+            case '7':
+                message = "It's Sunday, rest and recharge!";
+                break;
+            default:
+                message = "Invalid day!";
+                break;
+        }
+
+        document.getElementById('message').innerText = message;
+    }
+</script>
+
+</body>
+</html>
